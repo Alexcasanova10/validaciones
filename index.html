@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Formulario Asistencia Conferencia</title>
+</head>
+<body>
+<div id="forma" class="forma">
+    <h1>Registre su Asistencia</h1>
+    <form action=""  onsubmit="enviar(event)">
+
+        <label for="nombre">Nombre</label>
+        <input type="text" id="nombre" name="nombre"/>
+        <br>
+        <label for="direccion">Direccion</label>
+        <input type="text" id="direccion" name="direccion"/>
+        <br>
+        <label for="telefono">Telefono</label>
+        <input type="text" id="telefono" name="telefono"/>
+        <br>
+        <label for="genero">Genero</label>
+        <select id="genero" name="genero">
+            <option value="">Seleccione</option>
+            <option id="masculino" >Masculino</option>
+            <option id="femenino">Femenino</option>
+        </select>
+        <br>
+        <label for="edad">Edad</label>
+        <input type="number" id="edad" name="edad"/>
+        <br>
+        <label for="email">E-mail</label>
+        <input type="text" id="email" name="email"/>
+        <br>
+        <label for="estadocivil">Estado Civil</label>
+        <select id="estadocivil" name="estadocivil">
+            <option value="">Seleccione</option>
+            <option id="soltero">Soltero</option>
+            <option id="casado">Casado</option>
+            <option id="viudo">Viudo</option>
+            <option id="divorciado">Divorciado</option>
+        </select>
+        <br>
+        <input type="checkbox" value="SI" id="aceptoCondiciones" />
+        <label for="">Acepto las condiciones</label>
+        <br>
+        <button id="btnRegi" type="submit" onsubmit="enviar(event)">Registrar</button>
+    </form>
+
+
+
+</div>
+
+    
+    <script src="js.js"></script>
+</body>
+</html>
